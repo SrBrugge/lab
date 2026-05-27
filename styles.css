@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 60px;
+}
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.content {
+    padding-top: 40px;
+}
+nav {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.card {
+    width: 15rem;
+    height: 20rem;
+    background: rgb(238, 175, 1);
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    float: left;
+}
+.badge {
+    position: absolute;
+    padding: 0.3rem;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    background: red;
+    border-radius: 20px;
+    color: white;
+}
+img {
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
+}
+.card p {
+    font-weight: 900;
+    padding-left: 20px;
+    color: #fff;
+}
+.card p:nth-child(4) {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: x-large;
+    color: red;
+}
+.titulo-section {
+    position: sticky;
+    text-align: center;
+    background-color: #d1d1d1;
+    top: 40px;
+    padding: 20px;
+    font-size: 2rem;
+    z-index: 500;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    clear: both;
+}
+footer p {
+    margin: 15px 0;
+}
+
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px; /* Distância da parte inferior da tela */
+    right: 30px; /* Distância da parte lateral direita */
+    z-index: 9999; /* Garante que ficará acima de todos os elementos */
+    background-color: #25d366; /* Cor verde oficial do WhatsApp */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima */
+.btn-whatsapp:hover {
+    background-color: #128c7e; /* Tom de verde mais escuro */
+    transform: scale(1.05);
+}
